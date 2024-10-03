@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HardQuiz</title>
+    <link type="image/x-icon" href="logo.ico" rel="shortcut icon">
+    <link rel="stylesheet" href="style.css"> 
+    <script type="text/javascript" src="app.js" defer=""></script>
+    
+
+</head>
+<body>
+
+  <header>
+
+    <div class="logo">
+        <img src="logo.png">
+    </div>
+
+    <h1 class="site-title">HardQuiz</h1>
+
+    <nav>
+        <ul>
+            <li><a href="#about_us">О нас</a></li>
+            <li><a href="https://catherineasquithgallery.com/belye-fony/10826-kofe-na-belom-fone-96-foto.html">Квесты</a></li>
+            <li><a href="https://ru.wallpaper.mob.org/image/food-pechene-vipechka-rozhdestvo-sladosti-103277.html">Фоточки</a></li>
+        </ul>
+    </nav>
+
+  </header>
+    
+
+
+    <div class="slider-container">
+        <div class="slider">
+          <img src="1.jpg"  height="100px" onclick="openFullscreenImage(this)">
+          <img src="2.jpg"  height="100px" onclick="openFullscreenImage(this)">
+          <img src="3.jpg"  height="100px" onclick="openFullscreenImage(this)">
+          <img src="4.jpg"  height="100px" onclick="openFullscreenImage(this)">
+        </div>
+        <button class="prev-button" aria-label="Посмотреть предыдущий слайд">&lt;</button>
+        <button class="next-button" aria-label="Посмотреть следующий слайд">&gt</button>  
+    </div>
+<section id="section1"></section>
+      
+      <div class="column">
+          <h2>Доступные игры</h2>
+        
+
+        
+        <img src="logo.png" class="pic" onclick="openFullscreenImage(this)">
+        <p>
+          Можно ебануть какой-нибудь текстик.
+        </p>
+        
+    </div>
+    
+
+      </div>
+    <section id="about_us">
+
+      <div class="text_o_nas">
+        <h1>О Нас:</h1>
+            <p>Что-то тут напишем.
+            </p>
+            <p>Тут тоже можно ебануть.
+            </p>
+            <p>Пох, пусть пока побудет.
+            </p>
+      </div>
+
+    </section>
+
+
+    
+
+
+    <div id="fullscreen-container" class="hidden">
+      <span class="close-button" onclick="closeFullscreenImage()">&times;</span>
+      <img src="" alt="Полноэкранное изображение" id="fullscreen-image">
+    </div>
+
+    </section>
+    <!--<video src="1.mp4" controls style="height: 600px; width: 100%;"></video>-->
+
+    <button id="scrollToTopButton">Вверх</button>
+    <div class="str"></div>
+<!--<input class="input-num" type="text">
+<button class="btn">Отправить</button>-->
+</div>
+
+
+</body>
+
+<footer style="width: 100%;">
+
+  <div class="logof">
+    <img src="logo.png">
+</div>
+
+  <div class="social-icons">
+    <a href="https://t.me/HardQuizMSK" class="social-icon"><img src="tg.webp" alt="Tg"></a>
+    <a href="https://m.vk.com/" class="social-icon"><img src="vk.png" alt="Vk"></a>
+  </div>
+  <div>
+    <a href="#" class="email-link" onclick="window.location.href = 'mailto:' + this.dataset.email">Написать на почту</a>
+
+<script>
+  document.querySelector('.email-link').dataset.email = 'info@yourdomain.com'; // Замените на ваш email
+</script>
+  </div>
+  <!--<script type="text/javascript">
+let str = document.querySelector(".str"); // Берём элемент строки
+let btn = document.querySelector(".btn"); // Берём элемент кнопки
+
+let num1 = Math.ceil(Math.random() * 10); // Получаем рандомное число один
+let num2 = Math.ceil(Math.random() * 10); // Получаем рандомное число два
+let res = num1 + num2; // Результат сложение этих чисел
+
+// Выводим строчку ворожения
+str.innerHTML = `${num1} + ${num2} = `;
+
+// События нажатия на кнопку
+btn.addEventListener("click", function () {
+// Получаем значение из input
+let inputNum = document.querySelector(".input-num").value;
+// Переводим в числовой тип данных
+inputNum = parseInt(inputNum);
+// Условие, если значение из input равно результат
+if (inputNum === res) {
+// То выводит в консоль "Вход разрешён"
+alert("Вход разрешён");
+} else {
+// Иначе выводит "Вход запрещен"
+alert("Вход запрещен");
+}
+
+});
+</script>-->
+  
+</footer>
+
+
+</html>
